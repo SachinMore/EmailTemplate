@@ -30,7 +30,7 @@ div, textarea, input {
 }
 
 .row {
-  width: 100%;
+  /* width: 100%; */
   margin: 0 0 1em 0;
   padding: 0 2.5em;
 }
@@ -154,7 +154,12 @@ form small {
   margin: 0 0 0 0.5em;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 911px) {
+
+  .row.header {
+    height: 200px !important;
+  }
+
   .pull-right {
     float: none;
   }
@@ -202,11 +207,11 @@ form small {
 <body>
 
   
-<div class="container" style="max-width: 850px">
-  <div class="row header" style="height: 480px; width:850px; background-size: 850px 480px; background-repeat: no-repeat; background-position: right top;">
+<div class="container" style="max-width: 50%">
+  <div class="row header" style="max-width: 120%; height: 340px; background-size: 100% 100%; background-repeat: no-repeat; background-position: right top">
     <h1>CONTACT US &nbsp;</h1>
     <h3>Fill out the form below to learn more!</h3>
-    <div class="btn" style="position: absolute; top: 50%; left: 25%; border-radius: 20px; padding: 15px 30px"> asdas</div>
+    <!-- <div class="btn" style="position: absolute; top: 50%; left: 25%; border-radius: 20px; padding: 15px 30px"> asdas</div> -->
   </div>
   <div class="row body">
     <form action="#">
@@ -223,38 +228,10 @@ form small {
           <label for="email">Email</label>
           <input type="text" name="email" value="sachin@cognixia.com" style="border-radius: 50px" />
         </div>
-      </div>
-      <!-- <ul>
-        
-        <li>
-          <p class="left">
-            <label for="first_name">first name</label>
-            <input type="text" name="first_name" placeholder="John" />
-          </p>
-          <p class="pull-right">
-            <label for="last_name">last name</label>
-            <input type="text" name="last_name" placeholder="Smith" />      
-          </p>
-        </li>
-        
-        <li>
-          <p>
-            <label for="email">email <span class="req">*</span></label>
-            <input type="email" name="email" placeholder="john.smith@gmail.com" />
-          </p>
-        </li>        
-        <li><div class="divider"></div></li>
-        <li>
-          <label for="comments">comments</label>
-          <textarea cols="46" rows="3" name="comments"></textarea>
-        </li> -->
-        
+      </div>              
         <div class="row">
           <input class="btn btn-submit" type="submit" value="Submit" />
-          <!-- <small>or press <strong>enter</strong></small> -->
-        </div>
-        
-      <!-- </ul> -->
+        </div>      
     </form>  
   </div>
 </div>
